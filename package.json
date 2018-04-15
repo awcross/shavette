@@ -1,0 +1,69 @@
+{
+	"name": "shavette",
+	"version": "0.0.0",
+	"description": "Truncate text to a specified number of lines",
+	"license": "MIT",
+	"repository": "awcross/shavette",
+	"author": {
+		"name": "Alex Cross",
+		"email": "crossaw@gmail.com",
+		"url": "alexcross.io"
+	},
+	"engines": {
+		"node": ">=4"
+	},
+	"scripts": {
+		"build": "rollup -c",
+		"test": "xo && ava"
+	},
+	"main": "dist/index.umd.js",
+	"module": "dist/index.es.js",
+	"files": [
+		"dist"
+	],
+	"keywords": [
+		"shave",
+		"limit",
+		"trim",
+		"shorten",
+		"truncate",
+		"text",
+		"content",
+		"ellipsis"
+	],
+	"dependencies": {
+		"shave": "^2.1.3"
+	},
+	"devDependencies": {
+		"ava": "^0.25.0",
+		"babel-preset-env": "^1.6.0",
+		"puppeteer": "^1.3.0",
+		"rollup": "^0.57.1",
+		"rollup-plugin-babel": "^3.0.3",
+		"rollup-plugin-commonjs": "^9.1.0",
+		"rollup-plugin-node-resolve": "^3.0.0",
+		"xo": "^0.20.3"
+	},
+	"babel": {
+		"presets": [
+			[
+				"env",
+				{
+					"targets": {
+						"browsers": [
+							"last 2 versions",
+							"> 1%"
+						]
+					},
+					"modules": false,
+					"loose": true
+				}
+			]
+		]
+	},
+	"xo": {
+		"envs": [
+			"browser"
+		]
+	}
+}
