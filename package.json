@@ -1,6 +1,6 @@
 {
 	"name": "shavette",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "Truncate text to a specified number of lines",
 	"license": "MIT",
 	"repository": "awcross/shavette",
