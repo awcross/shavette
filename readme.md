@@ -1,6 +1,6 @@
 <h1 align="center">
 	<br>
-	<img width="380" src="logo.png" alt="shavette">
+	<img width="380" src="media/logo.svg" alt="shavette">
 	<br>
 	<br>
 </h1>
