@@ -29,7 +29,7 @@ function shave(element, lines) {
 	}, element, lines);
 }
 
-test.before(async () => {
+test.before('setup', async () => {
 	browser = await puppeteer.launch({args: ['--no-sandbox']});
 	page = await browser.newPage();
 
