@@ -13,9 +13,7 @@ export default function (target, options = {}) {
 	const maxLines = options.maxLines || 2;
 	const className = `${options.classname || 'js-shave'}-text`;
 
-	const elements = target instanceof NodeList ?
-		Array.prototype.slice.call(target) :
-		[...target];
+	const elements = target instanceof NodeList ? [...target] : [target];
 
 	elements.forEach(element => {
 		const textProp = element.textContent === undefined ? 'innerText' : 'textContent';
